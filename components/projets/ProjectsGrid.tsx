@@ -2,7 +2,7 @@ import {
   HeartHandshake,
   GraduationCap,
   Users,
-  PackageHeart,
+  Gift,
   Baby,
   HandHeart,
 } from "lucide-react";
@@ -19,7 +19,7 @@ const projects = [
     title: "Distribution humanitaire",
     description:
       "Distribution de vivres, vêtements, fournitures scolaires et produits de première nécessité.",
-    icon: PackageHeart,
+    icon: Gift,
   },
 
   {
