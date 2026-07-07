@@ -3,6 +3,7 @@ import FeaturesSection from "@/components/FeaturesSection";
 import AboutSection from "@/components/AboutSection";
 import InterventionSection from "@/components/InterventionSection";
 import RealizationsSection from "@/components/RealizationsSection";
+import ImpactSection from "@/components/ImpactSection";
 
 export default function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
       <AboutSection />
       <InterventionSection />
       <RealizationsSection />
+      <ImpactSection />
     </main>
   );
 }
