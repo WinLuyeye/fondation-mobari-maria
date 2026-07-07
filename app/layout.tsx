@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -161,6 +163,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className={`${geistSans.variable} h-full scroll-smooth`}>
+      <Navbar />
       <body
         className="
           min-h-screen
@@ -180,6 +183,8 @@ export default function RootLayout({
 
         {children}
       </body>
+      <Footer />
+
     </html>
   );
 }

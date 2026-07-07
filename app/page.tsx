@@ -19,7 +19,6 @@ export default function HomePage() {
       <ImpactSection />
       <JoinMissionSection />
       <TestimonialSection />
-      <Footer />
     </main>
   );
 }
