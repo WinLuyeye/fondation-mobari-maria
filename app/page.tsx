@@ -4,6 +4,7 @@ import AboutSection from "@/components/AboutSection";
 import InterventionSection from "@/components/InterventionSection";
 import RealizationsSection from "@/components/RealizationsSection";
 import ImpactSection from "@/components/ImpactSection";
+import JoinMissionSection from "@/components/JoinMissionSection";
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
       <InterventionSection />
       <RealizationsSection />
       <ImpactSection />
+      <JoinMissionSection />
     </main>
   );
 }
