@@ -18,16 +18,12 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://fondationmobarimaria.org"),
-
   title: {
     default: "Fondation Mobari Maria (FMM) | Vivre pour transformer",
-
     template: "%s | Fondation Mobari Maria",
   },
-
   description:
     "La Fondation Mobari Maria (FMM) est une organisation humanitaire en République Démocratique du Congo engagée dans l'autonomisation des femmes, la formation des jeunes, l'éducation, l'action humanitaire et le développement communautaire.",
-
   keywords: [
     "Fondation Mobari Maria",
     "FMM",
@@ -49,110 +45,68 @@ export const metadata: Metadata = {
     "Inclusion sociale",
     "Développement durable",
   ],
-
-  authors: [
-    {
-      name: "Fondation Mobari Maria",
-    },
-  ],
-
+  authors: [{ name: "Fondation Mobari Maria" }],
   creator: "Fondation Mobari Maria",
-
   publisher: "Fondation Mobari Maria",
-
   applicationName: "Fondation Mobari Maria",
-
   category: "Non-profit",
-
   alternates: {
     canonical: "/",
   },
-
   robots: {
     index: true,
     follow: true,
-
     googleBot: {
       index: true,
       follow: true,
-
       "max-image-preview": "large",
-
       "max-snippet": -1,
-
       "max-video-preview": -1,
     },
   },
-
   openGraph: {
     type: "website",
-
     locale: "fr_FR",
-
     url: "https://fondationmobarimaria.org",
-
     siteName: "Fondation Mobari Maria",
-
     title: "Fondation Mobari Maria (FMM) | Vivre pour transformer",
-
     description:
       "Une fondation engagée pour transformer des vies à travers l'éducation, l'autonomisation, l'action humanitaire et le développement communautaire en RDC.",
-
     images: [
       {
         url: "/images/og-image.jpg",
-
         width: 1200,
-
         height: 630,
-
         alt: "Fondation Mobari Maria - Vivre pour transformer",
       },
     ],
   },
-
   twitter: {
     card: "summary_large_image",
-
     title: "Fondation Mobari Maria (FMM)",
-
     description:
       "Vivre pour transformer. Une organisation engagée pour un avenir meilleur en République Démocratique du Congo.",
-
     images: ["/images/og-image.jpg"],
   },
-
   icons: {
     icon: "/favicon.ico",
-
     apple: "/apple-touch-icon.png",
   },
-
   manifest: "/site.webmanifest",
 };
 
 const organizationSchema = {
   "@context": "https://schema.org",
-
   "@type": "NGO",
-
   name: "Fondation Mobari Maria",
-
   alternateName: "FMM",
-
   url: "https://fondationmobarimaria.org",
-
   logo: "https://fondationmobarimaria.org/images/logo.png",
-
   description:
     "Organisation humanitaire œuvrant pour l'éducation, l'autonomisation des femmes, la formation des jeunes et le développement communautaire en RDC.",
-
   foundingDate: "2022-06-05",
-
   slogan: "Vivre pour transformer",
-
   areaServed: "République Démocratique du Congo",
-
   sameAs: ["https://facebook.com/", "https://instagram.com/"],
 };
 
@@ -163,28 +117,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className={`${geistSans.variable} h-full scroll-smooth`}>
-      <Navbar />
-      <body
-        className="
-          min-h-screen
-          flex
-          flex-col
-          antialiased
-          bg-white
-          text-gray-900
-        "
-      >
+      <body className="min-h-screen flex flex-col antialiased bg-white text-gray-900">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(organizationSchema),
           }}
         />
-
-        {children}
+        <Navbar />
+        <main className="flex-1">{children}</main>
+        <Footer />
       </body>
-      <Footer />
-
     </html>
   );
 }
