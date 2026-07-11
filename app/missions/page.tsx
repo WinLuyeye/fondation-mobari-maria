@@ -1,4 +1,6 @@
-import MissionsHero from "@/components/missions/MissionsHero";
+import 
+
+MissionsHero from "@/components/missions/MissionsHero";
 import MissionIntro from "@/components/missions/MissionIntro";
 import AreasSection from "@/components/missions/AreasSection";
 import ObjectivesSection from "@/components/missions/ObjectivesSection";

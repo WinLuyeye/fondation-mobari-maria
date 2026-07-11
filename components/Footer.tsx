@@ -37,32 +37,18 @@ export default function Footer() {
             </p>
 
             <div className="flex gap-4">
-              <a
-                href="#"
+              <Link
+                href="https://www.facebook.com/profile.php?id=100082627152538"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition hover:bg-yellow-400 hover:text-black"
               >
                 <FaFacebookF />
-              </a>
+              </Link>
 
               <a
                 href="#"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition hover:bg-yellow-400 hover:text-black"
               >
                 <FaInstagram />
-              </a>
-
-              <a
-                href="#"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition hover:bg-yellow-400 hover:text-black"
-              >
-                <FaLinkedinIn />
-              </a>
-
-              <a
-                href="#"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition hover:bg-yellow-400 hover:text-black"
-              >
-                <FaTwitter />
               </a>
             </div>
           </div>
@@ -141,7 +127,7 @@ export default function Footer() {
               <li className="flex gap-3">
                 <Phone className="shrink-0 text-yellow-400" size={20} />
 
-                <span>+243 XX XXX XX XX</span>
+                <span>+243 819292893 <br /> +243 81 2525 180</span>
               </li>
 
               <li className="flex gap-3">

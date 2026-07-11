@@ -52,45 +52,30 @@ const interventions = [
 export default function InterventionSection() {
   return (
     <section className="bg-gray-50 px-6 py-24">
-
       <div className="mx-auto max-w-7xl">
-
-
         {/* Header */}
 
         <div className="mx-auto mb-16 max-w-3xl text-center">
-
           <span className="mb-4 inline-block text-sm font-bold uppercase tracking-[3px] text-yellow-500">
             Nos domaines d'intervention
           </span>
 
-
           <h2 className="mb-6 text-3xl font-extrabold text-gray-900 md:text-5xl">
             Construire un avenir meilleur
-            <span className="text-yellow-500">
-              {" "}ensemble
-            </span>
+            <span className="text-yellow-500"> ensemble</span>
           </h2>
 
-
           <p className="text-gray-600 leading-8">
-            À travers ses différents programmes, la Fondation Mobari Maria
-            agit pour répondre aux besoins essentiels des communautés et
-            favoriser un développement humain durable.
+            À travers ses différents programmes, la Fondation Mobari Maria agit
+            pour répondre aux besoins essentiels des communautés et favoriser un
+            développement humain durable.
           </p>
-
         </div>
-
-
-
-
 
         {/* Cards */}
 
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-
           {interventions.map((item, index) => {
-
             const Icon = item.icon;
 
             return (
@@ -113,38 +98,23 @@ export default function InterventionSection() {
                 }}
                 className="group rounded-2xl bg-white p-8 shadow-sm transition hover:-translate-y-2 hover:shadow-xl"
               >
-
                 <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-yellow-400 transition group-hover:bg-black">
-
                   <Icon
                     size={28}
                     className="text-black transition group-hover:text-white"
                   />
-
                 </div>
-
-
 
                 <h3 className="mb-4 text-xl font-bold text-gray-900">
                   {item.title}
                 </h3>
 
-
-                <p className="leading-7 text-gray-600">
-                  {item.description}
-                </p>
-
-
+                <p className="leading-7 text-gray-600">{item.description}</p>
               </motion.div>
             );
-
           })}
-
         </div>
-
-
       </div>
-
     </section>
   );
 }
