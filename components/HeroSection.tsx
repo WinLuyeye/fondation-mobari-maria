@@ -12,46 +12,44 @@ const slides = [
     image:
       "https://res.cloudinary.com/dukqurtfw/image/upload/v1783460711/IMG-20260704-WA0104_bnbyux.jpg",
 
-    title: "Ensemble, transformons des vies.",
+    title: "Ensemble, construisons une société plus juste et plus solidaire.",
 
     description:
-      "Depuis 2022, la Fondation Mobari Maria agit en République Démocratique du Congo pour soutenir les personnes les plus vulnérables grâce à l'éducation, l'action humanitaire et au développement communautaire.",
+      "Depuis 2022, la Fondation Mobari Maria œuvre en République Démocratique du Congo pour promouvoir la dignité humaine, l'inclusion sociale et le développement durable des communautés les plus vulnérables.",
 
     primary: "Faire un don",
 
-    secondary: "Découvrir",
+    secondary: "Découvrir la fondation",
   },
 
   {
     id: 2,
-
     image:
       "https://res.cloudinary.com/dukqurtfw/image/upload/v1783459502/IMG-20260704-WA0057_kag2xg.jpg",
 
-    title: "Former aujourd'hui, bâtir le Congo de demain.",
+    title: "Former, accompagner et autonomiser pour transformer durablement les vies.",
 
     description:
-      "Nous accompagnons les femmes et les jeunes grâce à la formation professionnelle, au leadership et à l'entrepreneuriat afin de favoriser leur autonomie.",
+      "Nous développons des programmes d'éducation, de formation professionnelle, d'entrepreneuriat et d'insertion afin d'offrir aux femmes, aux jeunes et aux enfants vulnérables les moyens de construire leur avenir.",
 
-    primary: "Nos programmes",
+    primary: "Nos missions",
 
-    secondary: "Nous rejoindre",
+    secondary: "Nos programmes",
   },
 
   {
     id: 3,
-
     image:
       "https://res.cloudinary.com/dukqurtfw/image/upload/v1783459503/IMG-20260704-WA0070_gtvhix.jpg",
 
-    title: "Chaque geste compte. Chaque vie mérite une chance.",
+    title: "Chaque action aujourd'hui construit l'espoir de demain.",
 
     description:
-      "Nos actions humanitaires redonnent espoir aux orphelins, aux familles vulnérables et aux communautés qui ont besoin d'un accompagnement durable.",
+      "À travers nos actions humanitaires, nos campagnes de sensibilisation, notre soutien aux orphelins, aux familles vulnérables et aux personnes âgées, nous faisons naître un changement durable dans les communautés.",
 
     primary: "Nos réalisations",
 
-    secondary: "Devenir bénévole",
+    secondary: "Rejoindre notre mission",
   },
 ];
 

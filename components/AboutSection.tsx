@@ -20,7 +20,7 @@ export default function AboutSection() {
         >
           <div className="relative h-[450px] overflow-hidden rounded-2xl">
             <Image
-              src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1200&auto=format&fit=crop"
+              src="https://res.cloudinary.com/dukqurtfw/image/upload/v1783812933/IMG-20260704-WA0093_s4f1mw.jpg"
               alt="Fondation Mobari Maria - Action humanitaire"
               fill
               className="object-cover"
@@ -55,18 +55,11 @@ export default function AboutSection() {
           </h2>
 
           <p className="mb-6 text-base leading-8 text-gray-600">
-            La Fondation Mobari Maria (FMM) est une organisation à but non
-            lucratif créée le 5 juin 2022 par Madame Maria Mobari EKOLOANE. Elle
-            œuvre pour promouvoir la solidarité, l'inclusion sociale,
-            l'autonomisation des femmes et des jeunes ainsi que le développement
-            humain en République Démocratique du Congo.
+            La Fondation Mobari Maria est une organisation à but non lucratif créée le 5 juin 2022 avec la conviction qu'une société plus juste se construit par la solidarité, l'inclusion et l'engagement citoyen.
           </p>
 
           <p className="mb-8 text-base leading-8 text-gray-600">
-            À travers ses actions humanitaires, ses programmes de formation et
-            ses initiatives communautaires, la Fondation accompagne les
-            personnes vulnérables afin de restaurer leur dignité et créer un
-            changement durable.
+           Depuis sa création, la Fondation agit auprès des populations vulnérables afin de favoriser leur autonomie, protéger leurs droits et contribuer durablement au développement des communautés en République Démocratique du Congo.
           </p>
 
           {/* Quote */}

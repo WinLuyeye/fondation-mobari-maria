@@ -10,7 +10,7 @@ const infos = [
   {
     icon: Phone,
     title: "Téléphone",
-    text: "+243 XXX XXX XXX",
+    text: "+243 819 292 893 - +243 81 2525 180",
   },
 
   {

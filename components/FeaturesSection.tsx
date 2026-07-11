@@ -8,23 +8,23 @@ import FeatureCard from "./FeatureCard";
 
 const features = [
   {
-    title: "Autonomisation",
+    title: "Éducation & Inclusion scolaire",
     description:
-      "Nous accompagnons les femmes et les jeunes vers l'indépendance économique grâce à l'entrepreneuriat, la formation et le développement des compétences.",
+      "Nous favorisons l'accès à une éducation inclusive pour les enfants vulnérables, soutenons la réussite scolaire et développons des programmes éducatifs favorisant l'égalité des chances.",
     icon: UsersRound,
   },
 
   {
-    title: "Éducation & Formation",
+    title: "Autonomisation des femmes & des jeunes",
     description:
-      "Nous favorisons l'accès à l'éducation et développons des programmes de formation professionnelle pour préparer l'avenir.",
+      "Nous accompagnons les femmes, les jeunes et les jeunes filles à travers des formations professionnelles, l'entrepreneuriat, le leadership et l'insertion socio-professionnelle.",
     icon: GraduationCap,
   },
 
   {
-    title: "Action Humanitaire",
+    title: "Protection sociale & Action humanitaire",
     description:
-      "Nous apportons une aide concrète aux orphelins, aux familles vulnérables et aux communautés dans le besoin.",
+      "Nous intervenons auprès des orphelins, des familles vulnérables, des personnes âgées et des communautés en apportant une assistance humanitaire, un accompagnement social et des actions de sensibilisation.",
     icon: HeartHandshake,
   },
 ];

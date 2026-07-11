@@ -19,7 +19,7 @@ const actions = [
     description:
       "Rejoignez une équipe engagée et participez directement à nos initiatives communautaires.",
     icon: Users,
-    link: "/benevole",
+    link: "/contact",
   },
 
   {
@@ -27,7 +27,7 @@ const actions = [
     description:
       "Construisons ensemble des projets durables pour un impact plus grand auprès des communautés.",
     icon: Handshake,
-    link: "/partenaire",
+    link: "/contact",
   },
 ];
 
@@ -37,7 +37,7 @@ export default function JoinMissionSection() {
       {/* Background Image */}
 
       <Image
-        src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?q=80&w=2070&auto=format&fit=crop"
+        src="https://res.cloudinary.com/dukqurtfw/image/upload/v1783459503/IMG-20260704-WA0068_iyphte.jpg"
         alt="Fondation Mobari Maria engagement communautaire"
         fill
         className="object-cover"

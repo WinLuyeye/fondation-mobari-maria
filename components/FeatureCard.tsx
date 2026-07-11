@@ -20,10 +20,6 @@ export default function FeatureCard({
       <p className="mb-6 text-sm leading-7 text-gray-500">
         {description}
       </p>
-
-      <button className="text-sm font-medium text-gray-700 underline">
-        Make a donation
-      </button>
     </div>
   );
 }

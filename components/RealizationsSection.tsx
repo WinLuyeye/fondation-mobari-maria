@@ -36,17 +36,17 @@ const realizations = [
 
 const images = [
   {
-    src: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=900&auto=format&fit=crop",
+    src: "https://res.cloudinary.com/dukqurtfw/image/upload/v1783459503/IMG-20260704-WA0070_gtvhix.jpg",
     alt: "Action humanitaire",
   },
 
   {
-    src: "https://images.unsplash.com/photo-1542810634-71277d95dcbb?q=80&w=900&auto=format&fit=crop",
+    src: "https://res.cloudinary.com/dukqurtfw/image/upload/v1783459502/IMG-20260704-WA0057_kag2xg.jpg",
     alt: "Soutien aux enfants",
   },
 
   {
-    src: "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?q=80&w=900&auto=format&fit=crop",
+    src: "https://res.cloudinary.com/dukqurtfw/image/upload/v1783812933/IMG-20260704-WA0120_neg22p.jpg",
     alt: "Solidarité communautaire",
   },
 ];

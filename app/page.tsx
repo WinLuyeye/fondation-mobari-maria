@@ -6,7 +6,6 @@ import RealizationsSection from "@/components/RealizationsSection";
 import ImpactSection from "@/components/ImpactSection";
 import JoinMissionSection from "@/components/JoinMissionSection";
 import TestimonialSection from "@/components/TestimonialSection";
-import Footer from "@/components/Footer";
 
 export default function HomePage() {
   return (
