@@ -6,30 +6,30 @@ import { HeartHandshake, School, HandHeart, Users } from "lucide-react";
 
 const realizations = [
   {
-    title: "Soutien aux orphelins",
+    title: "Visites dans les orphelinats",
     description:
-      "Des visites régulières dans les orphelinats pour apporter du soutien moral, matériel et humain aux enfants vulnérables.",
+      "Nous accompagnons régulièrement les orphelins à travers des visites, un soutien moral, des activités éducatives et des dons afin de leur redonner espoir.",
     icon: HeartHandshake,
   },
 
   {
-    title: "Distribution de dons",
+    title: "Distribution de dons humanitaires",
     description:
-      "Distribution de vivres, vêtements, fournitures scolaires et produits de première nécessité aux familles dans le besoin.",
+      "Distribution de vivres, vêtements, fournitures scolaires et produits de première nécessité aux familles les plus vulnérables.",
     icon: HandHeart,
   },
 
   {
-    title: "Actions éducatives",
+    title: "Éducation & Inclusion scolaire",
     description:
-      "Organisation d'activités éducatives, récréatives et de sensibilisation pour accompagner les enfants et les jeunes.",
+      "Plaidoyer pour l'accès à l'éducation, accompagnement scolaire et promotion de l'égalité des chances pour tous les enfants.",
     icon: School,
   },
 
   {
-    title: "Accompagnement communautaire",
+    title: "Sensibilisation communautaire",
     description:
-      "Des initiatives solidaires pour soutenir les familles en difficulté et renforcer les communautés locales.",
+      "Organisation de campagnes de sensibilisation sur les violences basées sur le genre, les droits humains, la protection des enfants et la cohésion sociale.",
     icon: Users,
   },
 ];

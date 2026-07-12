@@ -10,21 +10,21 @@ const features = [
   {
     title: "Éducation & Inclusion scolaire",
     description:
-      "Nous favorisons l'accès à une éducation inclusive pour les enfants vulnérables, soutenons la réussite scolaire et développons des programmes éducatifs favorisant l'égalité des chances.",
-    icon: UsersRound,
+      "Nous favorisons l'accès à une éducation de qualité pour les enfants et les jeunes, en soutenant l'inclusion scolaire, la réussite éducative et le développement des compétences nécessaires à leur avenir.",
+    icon: GraduationCap,
   },
 
   {
-    title: "Autonomisation des femmes & des jeunes",
+    title: "Autonomisation & Entrepreneuriat",
     description:
-      "Nous accompagnons les femmes, les jeunes et les jeunes filles à travers des formations professionnelles, l'entrepreneuriat, le leadership et l'insertion socio-professionnelle.",
-    icon: GraduationCap,
+      "Nous accompagnons les femmes, les jeunes et les jeunes filles à travers la formation professionnelle, le leadership, l'entrepreneuriat et l'insertion socio-professionnelle afin de renforcer leur autonomie économique.",
+    icon: UsersRound,
   },
 
   {
     title: "Protection sociale & Action humanitaire",
     description:
-      "Nous intervenons auprès des orphelins, des familles vulnérables, des personnes âgées et des communautés en apportant une assistance humanitaire, un accompagnement social et des actions de sensibilisation.",
+      "Nous apportons une assistance aux orphelins, aux familles vulnérables, aux personnes âgées et aux communautés tout en menant des actions de sensibilisation, de solidarité et de protection des droits humains.",
     icon: HeartHandshake,
   },
 ];
@@ -32,8 +32,7 @@ const features = [
 export default function FeaturesSection() {
   return (
     <section className="relative z-30 -mt-20 px-6 pb-24 md:-mt-24">
-      <div className="mx-auto grid max-w-6xl grid-cols-1 overflow-hidden rounded-xl bg-white shadow-2xl md:grid-cols-3">
-
+      <div className="mx-auto grid max-w-6xl grid-cols-1 overflow-hidden rounded-2xl bg-white shadow-2xl md:grid-cols-3">
         {features.map((feature, index) => (
           <FeatureCard
             key={index}
@@ -42,7 +41,6 @@ export default function FeaturesSection() {
             icon={feature.icon}
           />
         ))}
-
       </div>
     </section>
   );
