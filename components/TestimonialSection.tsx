@@ -2,6 +2,7 @@
 
 import { Quote, Users, Handshake } from "lucide-react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -24,10 +25,26 @@ const testimonials = [
 ];
 
 const partners = [
-  "Partenaire 1",
-  "Partenaire 2",
-  "Partenaire 3",
-  "Partenaire 4",
+  { 
+    name: "Partenaire 1", 
+    logo: "https://res.cloudinary.com/dukqurtfw/image/upload/v1787206914/walim.jpg_vh0wbz.jpg"
+  },
+  { 
+    name: "Partenaire 2", 
+    logo: "https://res.cloudinary.com/dukqurtfw/image/upload/v1787206914/photo1_lhadzb.jpg"
+  },
+  { 
+    name: "Partenaire 3", 
+    logo: "https://res.cloudinary.com/dukqurtfw/image/upload/v1787206914/photo2_ofvqdn.jpg"
+  },
+  { 
+    name: "Partenaire 4", 
+    logo: "https://res.cloudinary.com/dukqurtfw/image/upload/v1787206914/photo_ilkiet.jpg"
+  },
+  {
+    name: "Partenaire 5",
+    logo: "https://res.cloudinary.com/dukqurtfw/image/upload/v1787206914/photo3.jpg_mrkz7g.jpg"
+  }
 ];
 
 export default function TestimonialSection() {
@@ -100,15 +117,37 @@ export default function TestimonialSection() {
             </h3>
           </div>
 
-          <div className="grid grid-cols-2 gap-5 md:grid-cols-4">
+          {/* Grille adaptative pour 5 partenaires */}
+          <div className="grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-5">
             {partners.map((partner, index) => (
-              <div
+              <motion.div
                 key={index}
-                className="flex h-28 items-center justify-center rounded-xl bg-white font-semibold text-gray-400 shadow-sm"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="flex h-28 items-center justify-center rounded-xl bg-white p-4 shadow-sm transition-all duration-300 hover:shadow-md hover:scale-105"
               >
-                {partner}
-              </div>
+                <div className="relative h-16 w-full">
+                  <Image
+                    src={partner.logo}
+                    alt={`Logo ${partner.name}`}
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 20vw"
+                    onError={(e) => {
+                      // Fallback en cas d'image manquante
+                      e.target.src = "/placeholder-partner.png";
+                    }}
+                  />
+                </div>
+              </motion.div>
             ))}
+          </div>
+
+          {/* Centrage des logos sur mobile si nécessaire */}
+          <div className="mt-4 text-center text-sm text-gray-400">
+            {partners.length} partenaires engagés à nos côtés
           </div>
         </div>
       </div>
