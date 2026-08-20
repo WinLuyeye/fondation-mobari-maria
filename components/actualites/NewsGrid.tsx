@@ -2,10 +2,22 @@
 
 import { useState, useEffect } from "react";
 import NewsCard from "./NewsCard";
-import { newsManager } from "@/admin/newsData";
+import { newsManager } from "@/lib/newsData";
+
+// Définir l'interface pour un article
+interface Article {
+  id: number;
+  slug: string;
+  title: string;
+  image: string;
+  date: string;
+  category: string;
+  excerpt: string;
+  content: string;
+}
 
 export default function NewsGrid() {
-  const [articles, setArticles] = useState([]);
+  const [articles, setArticles] = useState<Article[]>([]);
 
   useEffect(() => {
     setArticles(newsManager.getAll());
