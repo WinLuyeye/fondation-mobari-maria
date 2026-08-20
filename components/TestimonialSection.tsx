@@ -3,6 +3,7 @@
 import { Quote, Users, Handshake } from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useState } from "react";
 
 const testimonials = [
   {
@@ -48,6 +49,13 @@ const partners = [
 ];
 
 export default function TestimonialSection() {
+  // État pour gérer les erreurs de chargement des images
+  const [imageErrors, setImageErrors] = useState<{ [key: number]: boolean }>({});
+
+  const handleImageError = (index: number) => {
+    setImageErrors(prev => ({ ...prev, [index]: true }));
+  };
+
   return (
     <section className="bg-gray-50 px-6 py-24">
       <div className="mx-auto max-w-7xl">
@@ -129,17 +137,21 @@ export default function TestimonialSection() {
                 className="flex h-28 items-center justify-center rounded-xl bg-white p-4 shadow-sm transition-all duration-300 hover:shadow-md hover:scale-105"
               >
                 <div className="relative h-16 w-full">
-                  <Image
-                    src={partner.logo}
-                    alt={`Logo ${partner.name}`}
-                    fill
-                    className="object-contain"
-                    sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 20vw"
-                    onError={(e) => {
-                      // Fallback en cas d'image manquante
-                      e.target.src = "/placeholder-partner.png";
-                    }}
-                  />
+                  {imageErrors[index] ? (
+                    // Fallback si l'image ne charge pas
+                    <div className="flex h-full w-full items-center justify-center bg-gray-100 text-xs text-gray-400 rounded">
+                      {partner.name}
+                    </div>
+                  ) : (
+                    <Image
+                      src={partner.logo}
+                      alt={`Logo ${partner.name}`}
+                      fill
+                      className="object-contain"
+                      sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 20vw"
+                      onError={() => handleImageError(index)}
+                    />
+                  )}
                 </div>
               </motion.div>
             ))}
