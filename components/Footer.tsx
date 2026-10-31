@@ -5,10 +5,9 @@ import Link from "next/link";
 import {
   FaFacebookF,
   FaInstagram,
-  FaLinkedinIn,
-  FaTwitter,
 } from "react-icons/fa";
 import { MapPin, Phone, Mail, ArrowRight } from "lucide-react";
+import logo from "@/public/logo.png"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -22,7 +21,7 @@ export default function Footer() {
           <div>
             <Link href="/" className="mb-6 inline-block">
               <Image
-                src="https://res.cloudinary.com/dukqurtfw/image/upload/v1783444892/logo_m0zm6v.png"
+                src={logo}
                 alt="Fondation Mobari Maria"
                 width={100}
                 height={100}

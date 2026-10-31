@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { Menu, X } from "lucide-react";
-
+import logo from "@/public/logo.png"
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
@@ -73,7 +73,7 @@ export default function Navbar() {
 
         <Link href="/" className="relative z-[60]">
           <Image
-            src="https://res.cloudinary.com/dukqurtfw/image/upload/v1783444892/logo_m0zm6v.png"
+            src={logo}
             alt="Fondation Mobari Maria"
             width={90}
             height={90}

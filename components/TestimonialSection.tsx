@@ -28,23 +28,24 @@ const testimonials = [
 const partners = [
   { 
     name: "Partenaire 1", 
-    logo: "https://res.cloudinary.com/dukqurtfw/image/upload/v1787206914/walim.jpg_vh0wbz.jpg"
+    // Remplacement par le chemin local
+    logo: "/pant1.jpeg" 
   },
   { 
     name: "Partenaire 2", 
-    logo: "https://res.cloudinary.com/dukqurtfw/image/upload/v1787206914/photo1_lhadzb.jpg"
+    logo: "/pant2.jpeg" 
   },
   { 
     name: "Partenaire 3", 
-    logo: "https://res.cloudinary.com/dukqurtfw/image/upload/v1787206914/photo2_ofvqdn.jpg"
+    logo: "/pant3.jpeg" 
   },
   { 
     name: "Partenaire 4", 
-    logo: "https://res.cloudinary.com/dukqurtfw/image/upload/v1787206914/photo_ilkiet.jpg"
+    logo: "/pant4.jpeg" 
   },
   {
     name: "Partenaire 5",
-    logo: "https://res.cloudinary.com/dukqurtfw/image/upload/v1787206914/photo3.jpg_mrkz7g.jpg"
+    logo: "/pant5.jpeg"
   }
 ];
 
