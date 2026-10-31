@@ -130,7 +130,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between px-6 py-5">
           <Link href="/" onClick={closeMenu}>
             <Image
-              src="https://res.cloudinary.com/dukqurtfw/image/upload/v1783444892/logo_m0zm6v.png"
+              src={logo}
               alt="Fondation Mobari Maria"
               width={80}
               height={80}
