@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import hero from "@/public/real2.jpeg"
 
 export default function NewsHero() {
   return (
@@ -22,7 +23,7 @@ export default function NewsHero() {
         className="absolute inset-0"
       >
         <Image
-          src="https://res.cloudinary.com/dukqurtfw/image/upload/v1783460711/IMG-20260704-WA0104_bnbyux.jpg"
+          src={hero}
           alt="Actualités Fondation Mobari Maria"
           fill
           priority

@@ -1,10 +1,11 @@
 import Image from "next/image";
+import hero from "@/public/hero2.jpeg"
 
 export default function ProjectsHero() {
   return (
     <section className="relative flex min-h-[90vh] items-center justify-center overflow-hidden">
       <Image
-        src="https://res.cloudinary.com/dukqurtfw/image/upload/v1783459503/IMG-20260704-WA0070_gtvhix.jpg"
+        src={hero}
         alt="Projets Fondation Mobari Maria"
         fill
         className="object-cover"

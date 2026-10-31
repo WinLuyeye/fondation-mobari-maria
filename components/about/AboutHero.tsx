@@ -1,10 +1,10 @@
 import Image from "next/image";
-
+import real from "@/public/real1.jpeg"
 export default function AboutHero() {
   return (
     <section className="relative flex min-h-[90vh] items-center justify-center overflow-hidden">
       <Image
-        src="https://res.cloudinary.com/dukqurtfw/image/upload/v1783460711/IMG-20260704-WA0104_bnbyux.jpg"
+        src={real}
         alt="Fondation Mobari Maria"
         fill
         className="object-cover"
