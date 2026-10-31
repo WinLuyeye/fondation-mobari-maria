@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
-
+import about from "@/public/hero1.jpeg"
 export default function AboutSection() {
   return (
     <section className="px-6 py-24">
@@ -20,7 +20,7 @@ export default function AboutSection() {
         >
           <div className="relative h-[450px] overflow-hidden rounded-2xl">
             <Image
-              src="https://res.cloudinary.com/dukqurtfw/image/upload/v1783812933/IMG-20260704-WA0093_s4f1mw.jpg"
+              src={about}
               alt="Fondation Mobari Maria - Action humanitaire"
               fill
               className="object-cover"

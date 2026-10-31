@@ -36,17 +36,18 @@ const realizations = [
 
 const images = [
   {
-    src: "https://res.cloudinary.com/dukqurtfw/image/upload/v1783459503/IMG-20260704-WA0070_gtvhix.jpg",
+    // Remplacement par le chemin local
+    src: "/real1.jpeg",
     alt: "Action humanitaire",
   },
 
   {
-    src: "https://res.cloudinary.com/dukqurtfw/image/upload/v1783459502/IMG-20260704-WA0057_kag2xg.jpg",
+    src: "/real2.jpeg",
     alt: "Soutien aux enfants",
   },
 
   {
-    src: "https://res.cloudinary.com/dukqurtfw/image/upload/v1783812933/IMG-20260704-WA0120_neg22p.jpg",
+    src: "/real3.jpeg",
     alt: "Solidarité communautaire",
   },
 ];

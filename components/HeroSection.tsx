@@ -10,7 +10,7 @@ const slides = [
   {
     id: 1,
     image:
-      "https://res.cloudinary.com/dukqurtfw/image/upload/v1783460711/IMG-20260704-WA0104_bnbyux.jpg",
+      "/hero2.jpeg",
 
     title: "Ensemble, construisons une société plus juste et plus solidaire.",
 
@@ -25,7 +25,7 @@ const slides = [
   {
     id: 2,
     image:
-      "https://res.cloudinary.com/dukqurtfw/image/upload/v1783459502/IMG-20260704-WA0057_kag2xg.jpg",
+      "/hero1.jpeg",
 
     title: "Former, accompagner et autonomiser pour transformer durablement les vies.",
 
@@ -40,7 +40,7 @@ const slides = [
   {
     id: 3,
     image:
-      "https://res.cloudinary.com/dukqurtfw/image/upload/v1783459503/IMG-20260704-WA0070_gtvhix.jpg",
+      "/hero3.jpeg",
 
     title: "Chaque action aujourd'hui construit l'espoir de demain.",
 

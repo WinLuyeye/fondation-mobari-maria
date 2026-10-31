@@ -37,7 +37,7 @@ export default function JoinMissionSection() {
       {/* Background Image */}
 
       <Image
-        src="https://res.cloudinary.com/dukqurtfw/image/upload/v1783459503/IMG-20260704-WA0068_iyphte.jpg"
+        src={"/cont1.jpeg"}
         alt="Fondation Mobari Maria engagement communautaire"
         fill
         className="object-cover"
