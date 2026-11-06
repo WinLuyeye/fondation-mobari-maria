@@ -1,11 +1,12 @@
 import Image from "next/image";
+import hero from "@/public/hero2.jpeg"
 
 export default function DonationHero() {
   return (
     <section className="relative min-h-[90vh] overflow-hidden">
       <Image
-        src="https://res.cloudinary.com/dukqurtfw/image/upload/v1783460711/IMG-20260704-WA0104_bnbyux.jpg"
-        alt="Faire un don Fondation Mobari Maria"
+        src={hero}
+        alt="Projets Fondation Mobari Maria"
         fill
         className="object-cover"
       />
