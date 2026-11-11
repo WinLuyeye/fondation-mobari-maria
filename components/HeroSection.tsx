@@ -7,23 +7,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "./Navbar";
 
 const slides = [
-  {
+    {
     id: 1,
-    image:
-      "/hero2.jpeg",
-
-    title: "Ensemble, construisons une société plus juste et plus solidaire.",
-
-    description:
-      "Depuis 2022, la Fondation Mobari Maria œuvre en République Démocratique du Congo pour promouvoir la dignité humaine, l'inclusion sociale et le développement durable des communautés les plus vulnérables.",
-
-    primary: "Faire un don",
-
-    secondary: "Découvrir la fondation",
-  },
-
-  {
-    id: 2,
     image:
       "/hero1.jpeg",
 
@@ -36,7 +21,20 @@ const slides = [
 
     secondary: "Nos programmes",
   },
+  {
+    id: 2,
+    image:
+      "/hero2.jpg",
 
+    title: "Ensemble, construisons une société plus juste et plus solidaire.",
+
+    description:
+      "Depuis 2022, la Fondation Mobari Maria œuvre en République Démocratique du Congo pour promouvoir la dignité humaine, l'inclusion sociale et le développement durable des communautés les plus vulnérables.",
+
+    primary: "Faire un don",
+
+    secondary: "Découvrir la fondation",
+  },
   {
     id: 3,
     image:

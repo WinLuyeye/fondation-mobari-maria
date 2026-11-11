@@ -36,7 +36,7 @@ export default function AdminPage() {
         <form onSubmit={handleSubmit} className="space-y-5">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
-              Nom d'utilisateur
+              Nom d&apos;utilisateur
             </label>
             <input
               type="text"
