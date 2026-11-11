@@ -1,14 +1,7 @@
 import type { Metadata, Viewport } from "next";
-import { Geist } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-  display: "swap",
-});
 
 export const viewport: Viewport = {
   themeColor: "#facc15",
@@ -116,7 +109,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className={`${geistSans.variable} h-full scroll-smooth`}>
+    <html lang="fr" className="h-full scroll-smooth">
       <body className="min-h-screen flex flex-col antialiased bg-white text-gray-900">
         <script
           type="application/ld+json"

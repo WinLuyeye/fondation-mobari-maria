@@ -1,5 +1,5 @@
 import Image from "next/image";
-import hero from "@/public/hero2.jpeg"
+import hero from "@/public/hero2.jpg"
 
 export default function ProjectsHero() {
   return (
